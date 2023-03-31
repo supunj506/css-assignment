@@ -14,7 +14,6 @@
 </head>
 <style>
     body {
-        position: relative;
         margin: 0;
     }
 
@@ -45,81 +44,118 @@
         font-size: 16px;
     }
 
-    section > div:first-child {
-        position: sticky;
-        width: 20vw;
-        height: 100vh;
-        background: indigo;
+    /*-----------------------------------------------------------------------------*/
+    main {
+        position: relative;
+        width: 100%;
     }
-    section>div:first-child>nav{
+
+    main > aside {
         position: absolute;
-        width: 25%;
-        left: -6%;
-        top: 10px;
-        cursor: pointer;
+        width: 20%;
+        top: 0;
+        bottom: 0;
+        background-color: indigo;
     }
-    section>div:first-child>nav>ul>li{
+
+    aside ul {
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    aside ul li {
         list-style: none;
-        color: white;
+        font-size: 20px;
         display: grid;
-        padding: 15px;
-
-
+        padding-top: 20px;
+        color: white;
     }
 
+    aside ul li a {
+        text-decoration: none;
+        color: white;
+    }
 
+    /*-----------------------------------------------------------------------------*/
 
-    section > div:nth-child(2) {
+    main > section {
+        position: relative;
+        width: 80%;
+        left: 20%;
+    }
+
+    main > section > section > div {
+        display: inline-block;
+        width: 32%;
+        border: green solid 2px;
+    }
+
+    main > section > section {
+
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    main > section > section > div:first-child {
         border: 2px solid red;
         background: gray;
-        width: 25%;
+        width: 32%;
         height: 250px;
-        position: absolute;
-        left: 22%;
-        top: 60px;
+        position: relative;
+        left: 0;
+        top: 5px;
     }
 
-    section > div:nth-child(3) {
+    main > section > section > div:nth-child(2) {
         border: 2px solid red;
         background: gray;
-        width: 25%;
+        width: 32%;
         height: 250px;
-        position: absolute;
-        left: 47%;
-        top: 60px;
+        position: relative;
+        left: 0;
+        top: 5px;
     }
 
-    section > div:nth-child(4) {
+    main > section > section > div:nth-child(3) {
         border: 2px solid red;
         background: gray;
-        width: 25%;
+        width: 32%;
         height: 250px;
-        position: absolute;
-        left: 72%;
-        top: 60px;
+        position: relative;
+        left: 0;
+        top: 5px;
     }
+
+    main > section > section > div > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-----------------------------------------------------------------------------*/
+
+    main > section > article {
+        padding-left: 10px;
+        overflow-x: hidden;
+        width: 95%;
+    }
+
+    main > section > article > p {
+        width: 100%;
+    }
+
+    /*-----------------------------------------------------------------------------*/
 
     footer {
         position: relative;
-        margin-top: 0;
         width: 100%;
-        height: 30px;
-        background: gray;
+        background-color: gray;
     }
 
-    footer > dd {
-        position: relative;
-        margin-left: 40%;
-        top: 5px;
-
-    }
-
-    section > div:nth-child(5) {
-        position: absolute;
-        width: 75%;
-        left: 22%;
-        top: 320px;
-
+    footer > p {
+        margin: 0;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: bold;
     }
 
 </style>
@@ -135,36 +171,65 @@
         </ul>
     </nav>
 </header>
-<section>
+<main>
+    <aside>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </aside>
 
-    <div>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Service</li>
-                <li>Contact</li>
-                <li>About </li>
-            </ul>
-        </nav>
-    </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cupiditate deleniti, doloribus hic
-            inventore molestias nisi quia ullam veritatis. Ab amet animi consequuntur cumque delectus dolore dolorem
-            error, et ex harum labore laborum laudantium maiores molestias, nam nihil non obcaecati optio praesentium
-            quibusdam ratione repudiandae sapiente soluta temporibus, voluptate voluptatibus voluptatum. Ad atque beatae
-            blanditiis dolor eaque esse id ipsam itaque maiores maxime numquam officiis optio pariatur quam, qui quo
-            sequi tempore totam, ut voluptas. Architecto, aut autem blanditiis commodi dolor doloremque, exercitationem
-            incidunt, officia reprehenderit sequi sunt temporibus totam ullam unde veritatis? Adipisci culpa dolorum est
-            numquam quisquam.</p>
+    <section>
+        <section>
+            <div>
+                <img alt="rocket_gif" src="asset/gift/rocket-3972_256.gif">
+            </div>
+            <div>
+                <img alt="rocket_gif" src="asset/gift/rocket-3972_256.gif">
+            </div>
+            <div>
+                <img alt="rocket_gif" src="asset/gift/rocket-3972_256.gif">
+            </div>
+        </section>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae crem ipsum dolor sit amet, consectetur
+                adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium,
+                nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid,rem ipsum dolor sit amet,
+                .</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid aut autem corporis
+                deleniti doloremque dolorum exercitationem fuga hic in iste iure magnam maiores molestias, mollitia
+                natus possimus praesentium quas quasi reiciendis sapiente sed ullam vero voluptatem voluptatibus
+                voluptatum. Animi blanditiis distinctio dolorem, doloribus enim expedita, id ipsam iste modi nam natus
+                quas quisquam quod, ratione suscipit. Adipisci alias asperiores atque commodi corporis debitis eaque
+                esse excepturi illo in ipsum iusto laborum magnam molestiae molestias nemo odit pariatur perferendis
+                perspiciatis porro, quae quam quisquam quo reprehenderit saepe sapiente similique, vel, velit vitae
+                voluptas. Ab cumque doloremque vitae! Accusantium alias aliquid commodi dolores eum explicabo labore
+                magnam maxime molestiae, non pariatur, placeat quasi sed sit sunt, tempora temporibus vel. A accusamus
+                alias, asperiores beatae commodi dignissimos in iste iusto mollitia neque, perferendis ratione
+                reprehenderit sit vitae voluptas? Ad, expedita magni nobis quae repellat sed? Ab aliquam architecto
+                commodi consequatur culpa cum dignissimos fuga illo in inventore magni maxime nobis officia provident
+                quibusdam quidem, quo quod suscipit temporibus voluptates. Aut deleniti dolores ipsa tempore. A dolor
+                illum impedit iusto nobis, quisquam quos repellat repellendus voluptate voluptatibus. A aliquid beatae
+                cum dolorum eius enim fugiat ipsa itaque laudantium minima obcaecati, perspiciatis quia ratione
+                repellendus rerum sequi temporibus voluptas voluptatem? A adipisci animi, architecto culpa cumque
+                debitis dicta dignissimos dolorem doloremque dolores doloribus earum est et excepturi exercitationem id,
+                ipsam, ipsum iste iusto laboriosam minima molestias neque nostrum pariatur perferendis perspiciatis qui
+                quia quis rem repellat sed suscipit ut velit? Commodi deleniti eveniet expedita illo numquam odio
+                perspiciatis soluta velit! A accusantium dolores fuga illo iste itaque quam quisquam tempore unde
+                voluptatem. Aliquam aliquid amet consectetur distinctio ea eaque et eum, facere iste magni maiores
+                molestiae pariatur, possimus quaerat quibusdam reprehenderit sint tempore tenetur. Cupiditate ea eum ex
+                fuga molestiae odit quibusdam vitae!</p>
 
-    </div>
-</section>
+
+        </article>
+    </section>
+
+</main>
 
 <footer>
-    <dd>Supun Madubhashitha Jayasinghe</dd>
+    <p>Supun Madubhashitha Jayasinghe</p>
 </footer>
 </body>
 </html>
