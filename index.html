@@ -1,0 +1,137 @@
+<!--* @author : @MJ-->
+<!--* Date    : 6/2/2023-->
+<!--* Time    : 5:26 PM-->
+<!--* Project : css-assignment-->
+<!--* Created by IntelliJ IDEA.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Assignment</title>
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            height: 100vh;
+            background-color: gray;
+
+        }
+        h1 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 50px;
+            margin: 0;
+        }
+        main > section:first-child {
+            width: 100%;
+            height: 10%;
+            background-color: #0ca6e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main > section:nth-child(2) {
+            width: 100%;
+            height: 86%;
+            background-color: white;
+            position: relative;
+        }
+
+        main > section:nth-child(2) > section {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(2 ,1fr);
+            grid-template-columns: repeat(3 , 1fr);
+            gap: 70px;
+        }
+
+        main > section:nth-child(2) > section > div {
+            border-radius: 20px;
+            box-shadow: 12px 14px 20px 2px black;
+            cursor: pointer;
+            font-size: 20px ;
+            font-family: 'Rubik', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+        main > section:nth-child(2) > section > div > p {
+            margin: 10px;
+        }
+        main > section:nth-child(2) > section > div > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+
+        }
+
+
+
+
+
+
+        main > footer {
+            width: 100%;
+            height: 4%;
+            background-color: #2d2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        /*---------------------------------------------------------------------------------*/
+
+
+
+
+
+    </style>
+</head>
+<body>
+<main>
+    <section><h1>CSS Assignment</h1></section>
+    <section>
+        <section>
+            <div>
+                <img src="asset/image/Case_01.png" alt="cage_01.png">
+            </div>
+            <div>
+                <img src="asset/image/Case_02.png" alt="case_02.png">
+<!--                <p>Case 02</p>-->
+            </div>
+            <div>
+                <img src="asset/image/Case_03.png" alt="case_03.png">
+<!--                <p>Case 03</p>-->
+            </div>
+            <div>
+                <img src="asset/image/Case_04.png" alt="case_04.png">
+<!--                <p>Case 04</p>-->
+            </div>
+            <div>
+                <img src="asset/image/Case_05.png" alt="case_05.png">
+<!--                <p>Case 05</p>-->
+            </div>
+            <div>
+                <img src="asset/image/Case_06.png" alt="case_06.png">
+<!--                <p>Case 06</p>-->
+            </div>
+        </section>
+    </section>
+    <footer>
+        <p>Developed by CCNS</p>
+    </footer>
+</main>
+
+</body>
+</html>
