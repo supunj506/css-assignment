@@ -55,7 +55,7 @@
             gap: 70px;
         }
 
-        main > section:nth-child(2) > section > div {
+        main > section:nth-child(2) > section > a {
             border-radius: 20px;
             box-shadow: 12px 14px 20px 2px black;
             cursor: pointer;
@@ -65,11 +65,18 @@
             text-align: center;
             background-size: cover;
             background-position: center;
+
+            transition: background 0.4s,transform 0.4s;
+
+        }
+        main > section:nth-child(2) > section > a:hover{
+            transform: translateY(-20px);
+
         }
         main > section:nth-child(2) > section > div > p {
             margin: 10px;
         }
-        main > section:nth-child(2) > section > div > img {
+        main > section:nth-child(2) > section > a > img {
             width: 100%;
             height: 100%;
             border-radius: 20px;
@@ -103,29 +110,13 @@
     <section><h1>CSS Assignment</h1></section>
     <section>
         <section>
-            <div>
-                <img src="asset/image/Case_01.png" alt="cage_01.png">
-            </div>
-            <div>
-                <img src="asset/image/Case_02.png" alt="case_02.png">
-<!--                <p>Case 02</p>-->
-            </div>
-            <div>
-                <img src="asset/image/Case_03.png" alt="case_03.png">
-<!--                <p>Case 03</p>-->
-            </div>
-            <div>
-                <img src="asset/image/Case_04.png" alt="case_04.png">
-<!--                <p>Case 04</p>-->
-            </div>
-            <div>
-                <img src="asset/image/Case_05.png" alt="case_05.png">
-<!--                <p>Case 05</p>-->
-            </div>
-            <div>
-                <img src="asset/image/Case_06.png" alt="case_06.png">
-<!--                <p>Case 06</p>-->
-            </div>
+            <a target="_blank" href="case-01.html"> <img src="asset/image/Case_01.png" alt="cage_01.png"></a>
+            <a target="_blank" href="case_02.html"> <img src="asset/image/Case_02.png" alt="cage_02.png"></a>
+            <a target="_blank" href="case_03.html"> <img src="asset/image/Case_03.png" alt="cage_03.png"></a>
+            <a target="_blank" href="case_04.html"> <img src="asset/image/Case_04.png" alt="cage_04.png"></a>
+            <a target="_blank" href="case_05.html"> <img src="asset/image/Case_05.png" alt="cage_05.png"></a>
+            <a target="_blank" href="case_06.html"> <img src="asset/image/Case_06.png" alt="cage_06.png"></a>
+
         </section>
     </section>
     <footer>
